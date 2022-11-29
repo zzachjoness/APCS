@@ -1,6 +1,8 @@
 # Chapter 1. Digital Information
 
-# H1
+# 1. First item
+
+1. # First item
 
 ## H2
 

@@ -15,11 +15,11 @@
 - e.g. 0 1 0 1 1 0 1 1
 - One byte can store one character, e.g. 'A' or 'x' or '$'
 
-| Number of bits | Different Patterns               |
-| -------------- | -------------------------------- |
-| 1              | 0 1                              |
-| 2              | 00 01 10 11                      |
-| 3              | 000 001 010 011\ 100 101 110 111 |
+| Number of bits | Different Patterns                   |
+| -------------- | ------------------------------------ |
+| 1              | 0 1                                  |
+| 2              | 00 01 10 11                          |
+| 3              | 000 001 010 011<br />100 101 110 111 |
 
 **bold text**
 _italicized text_

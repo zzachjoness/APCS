@@ -32,9 +32,26 @@
 
 ## 2. Bytes
 
+- A byte is a unit of information storage
 - One Byte = a collection of 8 bits
 - e.g. 0 1 0 1 1 0 1 1
 - One byte can store one character, e.g. 'A' or 'x' or '$'
+- 8 bits can make up to 256 different patterns
+- One byte can hold a number between 0 & 255
+- All storage is measured in bytes, despite being very different hardware
+  - kilobyte, KB, 1E3 bytes
+  - Megabyte, MB, 1E6 bytes
+  - Gigabyte, GB, 1E9 bytes
+  - Terabyte, TB, 1E12 bytes
+- ASCII is an encoding representing each typed character by a number
+  - A is 65
+  - B is 66
+  - a is 69
+  - space is 32
+- "Unicode" is an encoding for mandaring, greek, arabic, etc. languages, typically 2-bytes per "chracter"
+- Each letter is stored in a byte, as below
+  | s | p | r | i |
+  | 83 | 112 | 114 | 105 |
 
 **bold text**
 _italicized text_

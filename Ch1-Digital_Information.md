@@ -53,21 +53,20 @@
   | s | p | r | i |
   | - | - | - | - |
   | 83 | 112 | 114 | 105 |
+- 100 typed letters takes up 100 bytes
+- when you send text messages, the bytes are sent
+- text is quite compact, using few bytes, compared to images etc.
 
-**bold text**
-_italicized text_
+## 3. Numbers in Computers
 
-1. First item
-2. Second item
-3. Third item
-
-- a item
-- b item
-  - ba item
-  - bb item
-- c item
-- **d item**
-- _e item_
+- **Integers** are typically stored with either 4 or 8 bytes
+- 4 bytes can store numbers between -2147483648 and 2147483647
+- 8 bytes can store numbers between -9223372036854775808 and 9223372036854775807
+- Adding in binary is just like normal addition with carrying
+  - When you run out of bits you cannot carry anymore
+  - Leftmost bit indicates sign, so carrying to the leftmost bit changes a number from positive to negative.
+  - Adding 1 to 2147483647 goes to -2147483648!
+  - This is called **Integer Overflow**
 
 ---
 

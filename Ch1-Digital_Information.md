@@ -18,4 +18,9 @@ _italicized text_
   - ba item
   - bb item
 - c item
-  **- d item**
+- **d item**
+- _e item_
+
+---
+
+> blockquote

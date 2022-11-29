@@ -51,6 +51,7 @@
 - "Unicode" is an encoding for mandaring, greek, arabic, etc. languages, typically 2-bytes per "chracter"
 - Each letter is stored in a byte, as below
   | s | p | r | i |
+  | - | - | - | - |
   | 83 | 112 | 114 | 105 |
 
 **bold text**

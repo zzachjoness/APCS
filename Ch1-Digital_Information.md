@@ -15,6 +15,8 @@
 - e.g. 0 1 0 1 1 0 1 1
 - One byte can store one character, e.g. 'A' or 'x' or '$'
 
+### How Many Patterns with N Bits?
+
 | Number of bits | Different Patterns                   |
 | -------------- | ------------------------------------ |
 | 1              | 0 1                                  |

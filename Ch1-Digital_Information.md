@@ -4,6 +4,8 @@
 
 - The smallest unit of storage
 - A bit stores either a 0 or 1
+- A switch that is on is represented as 0, or "false"
+- A switch that is off is represented as 1, or "true"
 - Anything with two seperate states can store 1 bit
 - In a chip: electric charge = 0/1
 - In a hard drive: spots of North/South magnetism = 0/1
@@ -67,6 +69,17 @@
   - Leftmost bit indicates sign, so carrying to the leftmost bit changes a number from positive to negative.
   - Adding 1 to 2147483647 goes to -2147483648!
   - This is called **Integer Overflow**
+
+## 4. Binary Numbers
+
+- Binary is also known as base 10
+- Base 10 is the decimal number system
+
+### Binary Number System (1 Byte)
+
+| n bits  | 7   | 6   | 5   | 4   | 3   | 2   | 1   | 0   |
+| ------- | --- | --- | --- | --- | --- | --- | --- | --- |
+| n sates | 256 | 128 | 64  | 32  | 16  | 8   | 4   | 2   |
 
 ---
 

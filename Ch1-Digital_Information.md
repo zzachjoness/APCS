@@ -1,5 +1,8 @@
 # Chapter 1. Digital Information
 
+Start: _November 29, 2022_
+Finish: _December 01, 2022_
+
 ## 1. Bits
 
 - The smallest unit of storage
@@ -72,14 +75,14 @@
 
 ## 4. Binary Numbers
 
-- Binary is also known as base 10
+- Binary is also known as base 2
 - Base 10 is the decimal number system
 
 ### Binary Number System (1 Byte)
 
-| n bits  | 7   | 6   | 5   | 4   | 3   | 2   | 1   | 0   |
-| ------- | --- | --- | --- | --- | --- | --- | --- | --- |
-| n sates | 256 | 128 | 64  | 32  | 16  | 8   | 4   | 2   |
+| n bits   | 7   | 6   | 5   | 4   | 3   | 2   | 1   | 0   |
+| -------- | --- | --- | --- | --- | --- | --- | --- | --- |
+| n states | 256 | 128 | 64  | 32  | 16  | 8   | 4   | 2   |
 
 ---
 

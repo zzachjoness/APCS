@@ -1,6 +1,6 @@
 # Chapter 1. Digital Information
 
-Start: _November 29, 2022_
+Start: _November 29, 2022_<br />
 Finish: _December 01, 2022_
 
 ## 1. Bits
@@ -12,7 +12,7 @@ Finish: _December 01, 2022_
 - Anything with two seperate states can store 1 bit
 - In a chip: electric charge = 0/1
 - In a hard drive: spots of North/South magnetism = 0/1
-- Group 8 bits together to form 1 byte
+- Group 8 bits together to form 1 byteu
 
   ### How Many Patterns with N Bits?
 
@@ -90,6 +90,14 @@ Finish: _December 01, 2022_
   - In a decimal system there would need to be much more accuracy/ and or a higher voltage threshhold if 10X accuracy was not available
   - Mechanical, thermal, electrical noise all decrease accuracy
   - Binary components can be simpler, have easier circuitry, less power usage, and this makes for cheaper more reliable components
+
+### Problems with Binary Numbers in Computers
+
+- In General, we need to determine in advance how many bits to set aside to represent a given quantity
+- If we don't set aside enough bits, we can't represent a given value
+  - 7 bits can represent an age from 0 - 127
+  - If somone survies past 127 years, the program is broken
+- When a number in a calculation exceeds the maximum number which can be represented, we have **_overflow_**
 
 ---
 

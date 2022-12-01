@@ -69,7 +69,7 @@ Finish: _December 01, 2022_
 - 8 bytes can store numbers between -9223372036854775808 and 9223372036854775807
 - Adding in binary is just like normal addition with carrying
   - When you run out of bits you cannot carry anymore
-  - Leftmost bit indicates sign, so carrying to the leftmost bit changes a number from positive to negative.
+  - Leftmost bit indicates sign, so carrying to the leftmost bit changes a number from positive to negative
   - Adding 1 to 2147483647 goes to -2147483648!
   - This is called **Integer Overflow**
 
@@ -83,6 +83,13 @@ Finish: _December 01, 2022_
 | n bits   | 8   | 7   | 6   | 5   | 4   | 3   | 2   | 1   |
 | -------- | --- | --- | --- | --- | --- | --- | --- | --- |
 | n states | 256 | 128 | 64  | 32  | 16  | 8   | 4   | 2   |
+
+- Binary was chosen for computations as there is a trade-off between circuit complexity and efficiency
+  - "zero" is any voltage less than X and "one" is any voltage more than X (Binary)
+  - This makes the circuity simplistic, we do not need to worry about precision
+  - In a decimal system there would need to be much more accuracy/ and or a higher voltage threshhold if 10X accuracy was not available
+  - Mechanical, thermal, electrical noise all decrease accuracy
+  - Binary components can be simpler, have easier circuitry, less power usage, and this makes for cheaper more reliable components
 
 ---
 

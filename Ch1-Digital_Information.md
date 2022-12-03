@@ -98,6 +98,30 @@ Finish: _December 01, 2022_
   - 7 bits can represent an age from 0 - 127
   - If somone survies past 127 years, the program is broken
 - When a number in a calculation exceeds the maximum number which can be represented, we have **_overflow_**
+  - For example, using 16-bits we can represent -32,768 to 32,767
+  - If a variable storing a 16-bit number stores 32,767 and we need to add one (1) to that number a value of -32,768 will be stored instaed
+
+### Problems with Binary Floating Point Numbers
+
+- 0.1 + 0.2 = 0.30000000000000004
+- 0.7 + 0.1 = 0.7999999999999999
+- What is happening?
+  - Some numbers we cannot represent in a set of number of decimal places
+    - 2 / 3 does't equal 0.67 or 0.66667 or even 0.6666667 instead we write that 2 / 3 = 0.{6}repeating
+    - Irrational numbers such as Pi, also can't be represented in a finite number of decimal places
+  - Repeating numbers and irrational numbers are not the same in binary and decimal
+    - The numbers 0.1 in base 10 is equal to 0.0{0011}repeating
+  - Inside the computer, floating-point numbers are represented in a set number of bits, just as integer numbers are. While intuitively we would expect 2/3rds when represented by a set number of decimal places to round to 0.66667, we don't expect something like 0.1 + 0.7 to cause problems, but it does because our insticts about decimal numbers does not carry to binary numbers
+  - It is said that the arithmetic operations on floating-point numbers resulted in a round-off error
+- To prevent unexpected surprises such as the ones above, programmers are cautioned not to store money using standard floating point techniques.
+
+## 5. Data Compression
+
+- **Compression** algorithms are used to reduce the amount of space needed to represnet a file
+- 2 types of compression **lossy** & **lossless**
+- **Losless** compression algorithms reduce the size of files without losing any information in the file, which means that we can reconstruct the original data from the compressed file
+  - Generally used for so-called "discrete" data, such as database records, spreadsheets, word-processing files, and even some kinds of image and video information.
+- **Lossy** compression algorigthms reduce the size of files by discarding the less important data in a file, which can significantly reduce file size but also affect file quality
 
 ---
 

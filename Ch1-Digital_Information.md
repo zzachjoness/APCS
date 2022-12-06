@@ -84,6 +84,8 @@ Finish: _December 01, 2022_
 | -------- | --- | --- | --- | --- | --- | --- | --- | --- |
 | n states | 256 | 128 | 64  | 32  | 16  | 8   | 4   | 2   |
 
+n.n,v7d ,cvk drd
+
 - Binary was chosen for computations as there is a trade-off between circuit complexity and efficiency
   - "zero" is any voltage less than X and "one" is any voltage more than X (Binary)
   - This makes the circuity simplistic, we do not need to worry about precision
@@ -96,7 +98,7 @@ Finish: _December 01, 2022_
 - In General, we need to determine in advance how many bits to set aside to represent a given quantity
 - If we don't set aside enough bits, we can't represent a given value
   - 7 bits can represent an age from 0 - 127
-  - If somone survies past 127 years, the program is broken
+  - If somone survies past 127 years, the program is broken.
 - When a number in a calculation exceeds the maximum number which can be represented, we have **_overflow_**
   - For example, using 16-bits we can represent -32,768 to 32,767
   - If a variable storing a 16-bit number stores 32,767 and we need to add one (1) to that number a value of -32,768 will be stored instaed
@@ -120,7 +122,21 @@ Finish: _December 01, 2022_
 - **Compression** algorithms are used to reduce the amount of space needed to represnet a file
 - 2 types of compression **lossy** & **lossless**
 - **Losless** compression algorithms reduce the size of files without losing any information in the file, which means that we can reconstruct the original data from the compressed file
+
   - Generally used for so-called "discrete" data, such as database records, spreadsheets, word-processing files, and even some kinds of image and video information.
+  - For the simplest of images, computers can use a compression algorith called run-length encoding (RLE)
+    - In RLE, the computer replaces each row with numbers that say how many consecutive pixels are the same color, always starting with the number of white pixels
+    - RLE is used for images with high contrast ratio and limited colors
+
+  ### Huffman Coding Algorithm
+
+  | character | binary code |
+  | --------- | ----------- |
+  | a         | 010         |
+  | c         | 00          |
+  | g         | 001         |
+  | t         | 1           |
+
 - **Lossy** compression algorigthms reduce the size of files by discarding the less important data in a file, which can significantly reduce file size but also affect file quality
 
 ---

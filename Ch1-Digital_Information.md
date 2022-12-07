@@ -138,6 +138,18 @@ n.n,v7d ,cvk drd
   | t         | 1           |
 
 - **Lossy** compression algorigthms reduce the size of files by discarding the less important data in a file, which can significantly reduce file size but also affect file quality
+  - There is 'a lot' of detail that humans cannot perceive
+  - Lossy compression algorithms attempt to remove detail without humans noticing
+  - Images: Keep the brithness, average the color
+    - The human eye is better at perceiving differences in brightness than differences in color.
+    - A compression algorithm can take advantage of that fact by keeping the brightness while reducing the amount of color information, a process known as **_chroma subsampling_**
+      - Chroma subsampling is a process used in many compression algorithms that deal with images, including the popular file formats JPEG & MPEG
+      - A process called _discrete cosine transform_ (**DCT**) is used to simplify the details in the brightness layer
+  - Audio: Drop the inaudible sounds
+    - The human ear has limitations to what it can hear, Audio compression algorithms can analyze an audio file and discard the sounds that are outside our hearing capacity, a process known as **preceptual audio coding**
+    - Temporal masking is when a sudden sound can hide other sounds for a period after it occurs -- and even a bit before
+    - Psychoacoustics is the branch of psychophysics involving the scientific study of sound perception and audiology -- how humans perceive various sounds
+  - Compression Quality
 
 ---
 

@@ -1,7 +1,7 @@
 # Chapter 1. Digital Information
 
 Start: _November 29, 2022_<br />
-Finish: _December 01, 2022_
+Finish: _December 07, 2022_
 
 ## 1. Bits
 

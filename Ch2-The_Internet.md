@@ -58,11 +58,38 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
     - Sending nothing
     - Wait...
     - Send a single puls
-- In an electrical conection such as _Ethernet_, the signal would be a voltage or current.
-- In an optical connection such as _fiber-optic cable_, the signal would be the intensity of light.
+- In an electrical conection such as **Ethernet**, the signal would be a voltage or current.
+- In an optical connection such as **fiber-optic cable**, the signal would be the intensity of light.
 - The process of turning binary data into a time-based signal is known as _line coding_
   - There are various line coding schemes that can be used based on the needs of the connection
 
 ### Bit Rate
 
--
+- Network connections can send bits very fast; we measure that speed using the **bit rate**, the nmber of bits of data that are sent per second
+- The earliest Internet connections were just 75 bits per second (bps)
+- In the year 2022, connections are often measured in Mbps
+
+### Bandwidth
+
+- The term **bandwidth** describes the maxiumum bit rate of a system
+- If a network connection has a bandwidth of 100 Mbps, this means it cannot transfer more than 100 megabits per second
+- The term _broadband Internet_ refers to a connection with a minimum bandwidth of 256 Kbps, enough speed to check emails and browse the web
+
+### Latency
+
+- The term **latency** is used to descrube how late bits arrive, i.e. the time between the sending of a data message and the receiving of that meassage, measured in milliseconds
+- Latency is also reffered to as the "ping rate"
+- Most often we measure the "round-trip" latency of a request
+  - A request is send to the Google server which takes 30ms to receive
+  - 40ms later we recieve notice that Google recieved the data
+  - The total round-trip latency is 70ms for this transaction
+- Latency depends on a number of physical factors
+  - Type of connection between parites
+  - Distance between connections
+  - Network congestion
+- The major limiting factor of latency is the speed of light, which nothing can move faster than 1ft/ns
+
+### Internet Speed
+
+- Speed is a combination of bandwidth and latency
+- Computers split up messages into packets, and they cannot send another message until the frist packet is received

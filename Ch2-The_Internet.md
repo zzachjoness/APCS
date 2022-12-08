@@ -103,11 +103,11 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
 
   #### IPv4 Addresses
 
-- IPv4 was the first version used on the Internet
-- IPv4 addreses look like this:
+  - IPv4 was the first version used on the Internet
+  - IPv4 addreses look like this:
 
-  **74.125.20.113**
+    > **74.125.20.113**
 
-- Each IP address is split into 4 numbers, and each of those numbers can range from 0 to 255:
+  - Each IP address is split into 4 numbers, and each of those numbers can range from 0 to 255:
 
-  **[0-255].[0-255].[0-255].[0-255]**
+    > **[0-255].[0-255].[0-255].[0-255]**

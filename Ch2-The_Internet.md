@@ -169,3 +169,31 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
   **Consider 24.147.242.217**
 
   - The first sequence of bits identifies the network and the final bits identify the individual node in the network
+  - 24.147 (the first two octets) identifies Comcast network
+  - 242.217 (the last two octets) identifies a home computer
+  - The Internet Protocol uses this hierarchial addressing scheme to make it easier to route messages form source to destination
+  - Once a message arrives at the network, a network router can take care of sending it to the individual node
+
+  #### Subnets
+
+  - Network administrators can break IP addresses into further subnetworks (subnets) as needed
+
+  **Consider 141.213.127.13**
+
+  - 141.213 -> Drexel network
+  - 127 -> Engineering department
+  - 13 -> Lab computer
+
+  - Adding further levels to the address hierarchy can improve the efficiency of routing within the network
+
+  #### Splitting octets
+
+  - In actuality, IP addresses are often split in the _middle_ of the octets
+
+  **Consider 141.213.127.13 in binary**
+  **10001101 11010101 01111111 00001101**
+
+  - All together that translates into 32 bits
+  - The first 16 bits could route to all of Drexel
+  - The next 2 bits could route to a specific department
+  - The final 14 bits could route to individual computers

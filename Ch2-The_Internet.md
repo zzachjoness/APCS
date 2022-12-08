@@ -93,3 +93,12 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
 
 - Speed is a combination of bandwidth and latency
 - Computers split up messages into packets, and they cannot send another message until the frist packet is received
+
+### IP Address
+
+- The **Internet Protocol (IP)** is one of the core protocols in the layers of the Internet, it is used in all Internet communication to handle both addressing and routing
+- The protocol describes the use of **IP addresses** to uniquely identify Internet-connected devices
+- Just like homes need mailing addresses, Internet-connected devices require an IP address to receive messages
+- When a computer sends a message to another computer, it must specify the recipient's IP address and also include its own IP address so that the second computer can reply
+
+#### IPv4 Addresses

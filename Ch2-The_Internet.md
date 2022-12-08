@@ -106,8 +106,66 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
   - IPv4 was the first version used on the Internet
   - IPv4 addreses look like this:
 
-    > **74.125.20.113**
+    **74.125.20.113**
 
   - Each IP address is split into 4 numbers, and each of those numbers can range from 0 to 255:
 
-    > **[0-255].[0-255].[0-255].[0-255]**
+    **[0-255].[0-255].[0-255].[0-255]**
+
+  - These numbers are stored in binary in the computer:
+
+    **01010101 01010101 0101010101 0101010101**
+
+  - Each number can represnet 2^8^ values, due to the 8 bits, which is also why we often call the "octets"
+  - Overall in IPv4 there are 2^32^ possible addresses, that is 4,294,967,296 unique combinations
+
+  #### IPv6 Addresses
+
+  - Back when IPv4 was born, the creators did not anticipate the popularity of the internet, and that more than 2^32^ unique addresses would be required
+  - We started running out of IPv4 adddresses in the 1990's, so IPv6 was proposed with a much longer addressing scheme.
+  - An IPv6 address looks like this:
+
+    **2001:0db8:0000:0042:0000:8a2e:0370:7334**
+
+  - The letters like d an b shown above are **hexadecimal numbers**, which means that the IPv6 address is much longer than it looks.
+  - Hexadecimal numbers are base-16
+  - There are 8 hexicideimal numbers, and eah number is 4 digits long.
+  - The highest value for each number is _FFFF_
+
+    **FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF**
+
+  What is _FFFF_ in decimal?
+
+  | F     | F     | F     | F     |
+  | ----- | ----- | ----- | ----- |
+  | 16^3^ | 16^2^ | 16^1^ | 16^0^ |
+  | 4096  | 256   | 16    | 1     |
+
+  Each F represents 15 in decimal:
+  (15 x 4096) + (15 x 256) + (15 x 16) + (15 x 1) = 65,535
+
+  - We can also calculate that based on the binary representation of FFFF
+  - Each hexadecimal digit F corresponds to 1111 in binary, so that results in these 16 bits:
+
+    **1111 1111 1111 1111**
+
+  - The highest number that can be represented by _n_ binary digits is 2^n^ - 1
+  - 2^16^ -1 = 65,535
+
+  - Each 4-digit hexadecimal number can range between 0 and 65,535
+  - There are 8 values, each representing 65,536 unique values
+  - In total, each IPv6 address is represented by 128 bits, so there are 2^128^ possible IPv6 address
+  - That is 340 undecillion unique addresses:
+
+    **340,282,366,920,938,000,000,000,000,000,000,000,000**
+
+- **Dynamic** IP address can change each day depending on what is assigned by the ISP when you join the network
+- Computers that act as servers, like the computers that power Google often have **static** IP addresses
+
+  - This makes it easier for computer to quickly send search requests to the servers
+
+  #### IP Address Hierarchy
+
+  **Consider 24.147.242.217**
+
+  - The first sequence of bits identifies the network and the final bits identify the individual node in the network

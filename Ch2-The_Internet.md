@@ -101,4 +101,13 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
 - Just like homes need mailing addresses, Internet-connected devices require an IP address to receive messages
 - When a computer sends a message to another computer, it must specify the recipient's IP address and also include its own IP address so that the second computer can reply
 
-#### IPv4 Addresses
+  #### IPv4 Addresses
+
+- IPv4 was the first version used on the Internet
+- IPv4 addreses look like this:
+
+  **74.125.20.113**
+
+- Each IP address is split into 4 numbers, and each of those numbers can range from 0 to 255:
+
+  **[0-255].[0-255].[0-255].[0-255]**

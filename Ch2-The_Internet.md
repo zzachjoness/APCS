@@ -197,3 +197,30 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
   - The first 16 bits could route to all of Drexel
   - The next 2 bits could route to a specific department
   - The final 14 bits could route to individual computers
+
+## 4. Routing
+
+**_The Internet Protocol (IP) describes the strcuture of the packets that are sent on the internet_**
+
+- **Packets** are the smaller bits in which messages are split up in when being sent on the internet
+- Each IP packet contains both a header (20 or 24 bytes long) and data (variable length)
+  - The header includes the IP address of the source and destination, plus other fields that help to route the packet
+  - The data is the content, i.e. strings of letters or part of a webpage
+
+### Step 1: Send packet to router
+
+- Computers send the first packet to the nearest router
+
+### Step 2: Router receives packet
+
+- Router looks @ the IP addresses
+
+### Step 3: Router forwards packet
+
+- The router has multiple paths it could send a packet along
+- The router decides the path by utilzing its **forwarding table**
+- Router locates the most specific row and chooses that address
+
+### Step 4: Final router forwards message
+
+- Router can send message to destination IP address which could be a PC or server

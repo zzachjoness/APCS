@@ -276,4 +276,39 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
 
   #### Packet Format
 
-  ![TCP Format!](/images/TCP_diagram.svg "TCP FORMAT")
+  - When sending packets using TCP/IP, the data portion of each IP packet is formatted as a **TCP segment**
+
+  ![TCP Segment!](/images/TCP_diagram.svg "TCP SEGMENT")
+
+  - Each TCP segment contains a header and data
+  - The TCP header contains many more fields than the UDP header and can range in size from 20 to 60 bytes
+
+  #### Transmitting a packet with TCP/IP
+
+  ##### Step 1: Establish connection
+
+  - When two computers want to send data to each other over TCP, they first need to esablish a connection using a **three-way handshake**
+
+  ![Three-way handshake!](/images/TWH.svg "Three-way handshake")
+
+  #### Step 2: Send Packets of Data
+
+  - When a packet of data is sent over TCP, the recipient must always acknowledge what they have received
+  - The acknowledgement number is increased by the length of the received data, which is part of the TCP header
+  - The sequence and acknowledgement numbers help the computers keep track of which data has been successfully received, lost, and/or sent twice
+
+  #### Step 3: Close the Connection
+
+  - Either computer can close the connection
+
+  ![FIN!](/images/Close_Connection.svg "Close Connection")
+
+  ### Detecting Lost Packets
+
+  - TCP conections can detect lost packets using a timeout
+  - If the timer runs out and the ACK is not received, the packet is sent again
+
+  ### Handling Out of Order Packets
+
+  - ACK & SEQ numbers are used to detect out of order packets
+  - SEQ numbers are used to deal with out of order packets and to reassemble the data in correct order

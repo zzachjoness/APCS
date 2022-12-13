@@ -224,3 +224,56 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
 ### Step 4: Final router forwards message
 
 - Router can send message to destination IP address which could be a PC or server
+
+- When we're trying to make sure a system is **fault tolerant** we look for single points of failure and find ways to add **redundancy** at those points
+
+## 5. Transporting Packets
+
+### Problems with Packets
+
+- A computer may send **multiple messages** to a destination and the destination needs to identify which packets belon to which message
+- Packets can arrive **out of order**, this can heppen especially if two packets follow different paths to the destination
+- Packets can be **corrupted**, meaning the received data no longer matches the originally sent data
+- Packets can be **lost** due to problems in the physical layer or in routers' forwarding tables
+  - If one packet of a message is lost it may be impossible to put the message back together in a way that makes sense
+- Similarly, packets might be **duplicated** due to accidental retransmission of the same packet
+
+### User Datagram Protocol (UDP)
+
+- The **User Datagram Protocol (UDP)** is a lightweight data transport protocol that works on top of IP
+- UPD provides a mechanism to detect corrupt data in packets, but does not attempt to solve other problems that arise, such as lost or out of order packets
+- UDP is sometimes known as the **_Unreliable Data Protocol_**
+- When sending packets using UDP over IP, the data portion for each IP packet is formatted as a UDP segment
+- Each UPD segment contains an 8-byte header and variable length data
+
+  #### Port Numbers
+
+  - The frist four bytes of the UDP header store the port numbers for the source and destination
+  - A networked device can reeive messages on different virtual ports
+  - The different ports help distinguish different types of network traffic
+
+  #### Segment Length
+
+  - The next two bytes of the UDP header store the length (in bytes) of the segment
+
+  #### Checksum
+
+  - The final two bytes of the UDP header is the checksum, a field that's used by the sender and receiver to check for data corruption
+  - Before sending off the segment, the sender:
+    1. Computes the checksum based on the data in the segment
+    2. Stores the computed checksum in the field
+  - Upon receiving the segment, the recipient:
+    1. Computes the checksum based on the received segment
+    2. Compares the checksums to eachother; if the checksums are not equal, it knows the data was corrupted
+  - When the recipient discovers that two checksums are different, it understands that the data has been corrupted.
+  - Unfortunately, the recipient cannot use the computed checksum to reconstruct the original data, so it will likely discard the packet entirely
+
+### Transmission Control Protocol (TCP)
+
+- The **Transmission Control Protocol (TCP)** is a transport protocol that is used on top of IP to ensure reliable transmission of packets
+- TCP includes mechanisms to solve many of the problems that arise from packet-based messaging such as lost, out of order, duplicate, and correpted packets
+- Since TCP is the protocol used most commonly on top of IP, the Internet protocol stack is somtimes referred to as **TCP/IP**
+
+  #### Packet Format
+
+  image.png

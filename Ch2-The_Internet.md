@@ -312,3 +312,41 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
 
   - ACK & SEQ numbers are used to detect out of order packets
   - SEQ numbers are used to deal with out of order packets and to reassemble the data in correct order
+
+### The World Wide Web
+
+- The Web is a massive networks of webpages, programs, and files that are accessible via URL's
+- **Domain Name System (DNS) protocol** is used to convert a domain name to an IP address
+- **HyperText Transfer Protocol (HTTP)** is used to request the webpage contents from that IP address
+- **Transport Layer Security (TLS) protocol** is used to serve the website over a secure, encrypted connection
+- The web browser uses the protocols on top of the Internet protocols, every HTTP request also uses TCP & IP
+- The Web is just one of the applications built on top of the Internet protocols, but it is by far the most popular
+
+### Domain Name System (DNS)
+
+- Each domain is made up of parts:
+
+  **[thid-level-domain].[second-level-domain].[top-level-domain]**
+
+- There are a limited set of top level domains (TLDs), and many websites use the most common TLDs, ".com", ".org", ".edu"
+- The second level domain is unique to the company or org that registers it i.e. "wikipedia"
+- The thrid level domain is called a subdomain, i.e "m" in "m.wikipedia.org"
+- Each domain name maps to an IP address, which is a multi-step process
+  1. Check the local cache
+  2. Ask the Internet Service Provider (ISP) cahce
+  3. Ask the name servers,
+     ISP Domain Resolver -> Roote name servers -> TLD name servers -> Host name servers
+
+### Hypertext Transfer Protocol (HTTP)
+
+**_The computer uses the HTTP to downlaod a page from another computer somwhere on the internet_**
+
+1. Direct browser to URL
+2. Browser looks up IP
+3. Browser sends HTTP request ->
+   GET /index.html HTTP/1.1
+   Host: www.example.com
+4. Host sends back HTTP response
+   HTTP/1.1 200 OK
+   200 -> **HTTP status code**
+5. The browser renders the response

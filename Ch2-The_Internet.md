@@ -98,7 +98,7 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
 
 - The **Internet Protocol (IP)** is one of the core protocols in the layers of the Internet, it is used in all Internet communication to handle both addressing and routing
 - The protocol describes the use of **IP addresses** to uniquely identify Internet-connected devices
-- Just like homes need mailing addresses, Internet-connected devices require an IP address to receive messages
+- Just like homes need mailing addresses, Internet-connected devices require an IP address to receive messagesJEre
 - When a computer sends a message to another computer, it must specify the recipient's IP address and also include its own IP address so that the second computer can reply
 
   #### IPv4 Addresses
@@ -276,4 +276,4 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
 
   #### Packet Format
 
-  image.png
+  ![TCP Format!](/images/TCP_diagram.svg "TCP FORMAT")

@@ -1,7 +1,7 @@
 # Chapter 2. The Internet
 
 Start: _December 07, 2022_<br />
-Finish: _December 07, 2022_
+Finish: _December 13, 2022_
 
 ## 1. Introduction
 
@@ -313,7 +313,7 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
   - ACK & SEQ numbers are used to detect out of order packets
   - SEQ numbers are used to deal with out of order packets and to reassemble the data in correct order
 
-### The World Wide Web
+## 6. The World Wide Web
 
 - The Web is a massive networks of webpages, programs, and files that are accessible via URL's
 - **Domain Name System (DNS) protocol** is used to convert a domain name to an IP address
@@ -350,3 +350,31 @@ _Wired or Wireless, all devices send electromagnetic signals representing 1s and
    HTTP/1.1 200 OK
    200 -> **HTTP status code**
 5. The browser renders the response
+
+## 7. Scalable Systems
+
+**_A scalable system is one that can continue functioning well even as it experiences higher usage_**
+
+- The protocols powering the Internet and Web were designed for scalability
+
+## 8. The Internet Protocol Suite
+
+- When data contains private information and needs to be sent securely, the **Transport Layer Secuitry (TSL) protocol** uses algorithms to encrypt the data, while **certiciate authorities** help users trust the encryption
+- Every messages uses a stack of protocols, with each protocol providing a layer of functionality
+  - There are protocols for the physical link layer such has Eithernet
+  - IP for the networking layer
+  - TCP or UDP for the data transport layer
+  - There are additionaly many protocols for the application layer (HTTP, DNS, TLS, FTP, SMTP, etc.)
+  - For example, an HTTP request may use a stack of HTTP, TCP, IP, and Ethernet
+
+## 9. Open Protocol Development
+
+**_The many protocols powering the Internet are standardized and open_**
+
+- The creators of the Internet made the protocols open on purpose
+- Vint Cerf, co-author of the TCP/IP protocols, said this about their development:
+
+  > _"The theory we had is that if we just specify what the protocols would look like and what software you needed to write, anybody who wanted to build a piece of the internet would do that and find somebody who wold be willing to connect to them. Then the system would grow organically because it didn't have any central control. And that's exactly what happened."_
+
+- The Intetnet Engineering Task Force (IETF) maintains the Internet Protocols
+- The IETF is an open standards committee that comes up with refinements to existing protocols and proposes entirely new protocols

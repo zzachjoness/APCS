@@ -47,3 +47,18 @@ Finish: _December 13, 2022_
 
 - JS -> `for(let x = 0; x < 10; x++):`
 - Python -> `for x in range(10):`
+
+## 9. Lists
+
+- Append (list, item)
+  - JS -> `fruits.push("apple")`
+  - Python -> `fruits.appned("apple")`
+- Instert (list, i, item)
+  - JS, insert "pear" @ index 1 -> `fruits.splice(1,0,"pear")`
+  - Python -> `fruits.insert(1,"pear")`
+- Reomve (list, i)
+  - JS, remove(index,length) -> `fruits.splice(1,1)`
+  - Python , remove first item -> `fruits.pop(1)`
+- Itterate over list
+  - JS - `for (var i = 0 ; i < list.length ; i++) { # do something special
+}`

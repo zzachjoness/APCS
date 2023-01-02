@@ -60,5 +60,9 @@ Finish: _December 13, 2022_
   - JS, remove(index,length) -> `fruits.splice(1,1)`
   - Python , remove first item -> `fruits.pop(1)`
 - Itterate over list
-  - JS - `for (var i = 0 ; i < list.length ; i++) { # do something special
-}`
+  - JS -
+  ```
+  for (var i = 0 ; i < list.length ; i++) {
+    # do something special
+  }
+  ```

@@ -66,3 +66,8 @@ Finish: _December 13, 2022_
     # do something special
   }
   ```
+  - Python -
+  ```
+  for i in list:
+    # do something special
+  ```

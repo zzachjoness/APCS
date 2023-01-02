@@ -23,3 +23,27 @@ Finish: _December 13, 2022_
 
 - concat
 - substring
+
+## 5. Conditionals
+
+- Boolean
+- If...else
+- Compond booleans
+  - JS -> || Python or
+  - JS -> && Python and
+  - JS -> !(expression) Python not
+
+## 6. Logical equivalence
+
+- NOT true equivalent false
+- NOT (speedLimit = carSpeed)
+- NOT (A AND B) equivalent NOT A OR NOT B
+
+## 7. Procedures
+
+- DRY
+
+## 8. Repetition
+
+- JS -> `for(let x = 0; x < 10; x++):`
+- Python -> `for x in range(10):`

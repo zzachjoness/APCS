@@ -19,5 +19,5 @@ Finish: _January 02, 2023_
   - **Emprical analysis** to find faults in an algorithm
     - Based on actual experimentation and observation of the results
     - Can only be used to prove that an implemented algorithm is _not_ correct, by discovering inputs where the output is unexpected
-    - However, it ==cannot prove that an algorithm is correct==
+    - However, it **_cannot_ prove that an algorithm is correct**
   - Only **formal reasoning** can prove total correctness

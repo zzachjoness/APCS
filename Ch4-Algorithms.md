@@ -30,8 +30,8 @@ Finish: _January 02, 2023_
 
 - **Constant Time** will always require a fixed number of steps no matter the input size
 - **Logarithmic Time** increases proportionally to the logarithms of the input size
-  - Binary Search impliments a halfing of the samples size every loop, which specifies `log<sub>2</sub>n`
+  - Binary Search impliments a halfing of the samples size every loop, which specifies log<sub>2</sub>n
 - **Linear Time** increases in size in direct proportion to the input size i.e. Linear Search
 - **Quadratic Time** algorithms increas in proportion to the input size squared
   - Several list sorting algorithms run in quadratic time i.e. selection sort
-  - Selection Sort starts from the front of the list, and keeps finding the next smallest value in the list and swapping it with the current value
+  - Selection Sort starts from the front of the list, and keeps finding the next smallest value in the list and swapping it with the current value which specifies 1/2(n<sup>2</sup>-n)

@@ -32,6 +32,14 @@ Finish: _January 02, 2023_
 - **Logarithmic Time** increases proportionally to the logarithms of the input size
   - Binary Search impliments a halfing of the samples size every loop, which specifies log<sub>2</sub>n
 - **Linear Time** increases in size in direct proportion to the input size i.e. Linear Search
-- **Quadratic Time** algorithms increas in proportion to the input size squared
+- **Quadratic Time** algorithms increase in proportion to the input size squared
   - Several list sorting algorithms run in quadratic time i.e. selection sort
   - Selection Sort starts from the front of the list, and keeps finding the next smallest value in the list and swapping it with the current value which specifies 1/2(n<sup>2</sup>-n)
+- **Exponential Time** algorithms grow in superpolynomial time, its number of steps increase faster than a polynomial function of the input size
+
+  - An algorithms often requires superpolynomial time when it must look at every permutation of values i.e. an algorithms that generates all possible numerical passwords for a given password length which specifies 10<sup>n</sup> steps
+
+  #### Polynomial vs. superpolynomial
+
+  - Polynomial time describes any run time that does not increase faster than n<sup>k</sup>, which includes constant time (n<sup>0</sup>), logarithmic time (log<sub>2</sub>n), linear time (n<sup>1</sup>), quadratic time (n<sup>2</sup>), and other higher degree polynomials (like n<sup>3</sup>)
+  - Superpolynomial time describes any run time that does increase faster than n<sup>k</sup>, and includes exponential time (2<sup>n</sup>), factorial time(n!), and anything else faster

@@ -113,3 +113,19 @@ Finish: _January 02, 2023_
 - Alan Turning proved the existence of undecidable problems in 1936 by finding an example, the now famous "halting problem":
 
 > Based on its code and an input, will a particular program ever finish running?
+
+```
+num = 1
+while num > 0:
+  print(num)
+  num += 1
+
+```
+
+- This program counts up _forever_, since 'num' will never equal 0
+- No algorithms exists that can analyze any program's code and determine whether it halts or not
+- In order to prove that such an algorithm cannot possibly exist, Turing used a "proof of contradiction"
+- We start by imagining that an algorithm does exist that can determine a program's haltability
+- Then we propose a program called 'HaltChecker' that takes two inputs, a program's code and an input for that program
+- It then uses a hypothetical haltability algorithm to return either "halts" or "never"
+- Implementation of a 'reverser' shows that haltability algorithms cannot exists

@@ -1,7 +1,7 @@
 # Chapter 3. Algorithms
 
 Start: _January 02, 2023_<br />
-Finish: _January 02, 2023_
+Finish: _January 05, 2023_
 
 ## 1. Introduction
 
@@ -135,3 +135,10 @@ while num > 0:
 - One way to speed up some types of algorithms is to use **parallel computing** to spread the algorithm across multiple processors running simultaneously
 - The standard programming model is **sequential computing**: the computer executes each operation of the program in order, one at a time
 - One way to evaluate the benefits or parallelizing a program is to measure the **speedup** which is the ratio of the time taken to run the program sequentially to the time taken to run the parallelized program
+
+### Distributed Computing
+
+- We can use **distributed computing** to distribute are problems across mutliple networked computing devices
+- Distributed computing is often used along side of parallel computing
+- A downside of distributed computing is the requirement for network communications between the computers, adding time, complexity, and inviting the possibility of netowrk disturbances, dropped packets, timeouts, ect. (communication overhead)
+-

@@ -129,3 +129,9 @@ while num > 0:
 - Then we propose a program called 'HaltChecker' that takes two inputs, a program's code and an input for that program
 - It then uses a hypothetical haltability algorithm to return either "halts" or "never"
 - Implementation of a 'reverser' shows that haltability algorithms cannot exists
+
+## 4. Parallel and Distributed Computing
+
+- One way to speed up some types of algorithms is to use **parallel computing** to spread the algorithm across multiple processors running simultaneously
+- The standard programming model is **sequential computing**: the computer executes each operation of the program in order, one at a time
+- One way to evaluate the benefits or parallelizing a program is to measure the **speedup** which is the ratio of the time taken to run the program sequentially to the time taken to run the parallelized program

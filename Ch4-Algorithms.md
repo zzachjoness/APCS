@@ -101,3 +101,15 @@ Finish: _January 02, 2023_
     - WalkSAT
     - 2-opt algorithm for TSP
     - Metropolis-Hastings algorithm
+
+### Undecidable Problems
+
+- Some problems take a very long time to solve, so we use algorithms that give approx solutions
+- There are some problems that a computer can _never_ solve, even the world's most powerful computer with infinite time: the undecidable problems
+- An **undecidable problem** is one that should give a "yes" or "no" answer, but yet no algorithm exists that can answer correctly on all inputs
+
+### The Halting Problem
+
+- Alan Turning proved the existence of undecidable problems in 1936 by finding an example, the now famous "halting problem":
+
+> Based on its code and an input, will a particular program ever finish running?
